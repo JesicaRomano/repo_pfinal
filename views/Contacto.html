@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--meta seo-->
+        <meta name="description" content="Puedes contactarte con nosotros completando el formulario de contacto y te responderemos a la brevedad. Brindamos asesoramiento en el proceso de compra, por cambios, problemas de envios, entre otros.">
+        <meta name="keywords" content="Formulario, asesoramiento"> 
+        <meta name="author" content="Jesica Romano">
+        <title>Formulario de contacto</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="shortcut icon" href="../img/store_building_market_shop_icon_207733.png" type="image/x-icon">
+
+    </head>
+    <body>
+        <!-- Start Nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-pink sticky-top" id="Botonera">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/Logo.jpg" alt="Logo Presentación de Boutique">
+                </a>    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link"  href="../views/Invierno2022.html">Invierno 2022</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/Vintage.html">Vintage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="../views/Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Nav -->
+        <!-- Star Header -->
+        <header class="medidaHeader">
+            <a href="../index.html">
+                <img src="../img/photo-form.webp" alt="Imagen Contacto" class="w-100 d-block spaceContent">
+            </a>
+        </header>
+        <!-- End Header -->
+        <!--Star breadcrumb-->
+        <div>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                </ol>
+            </nav>
+        </div>
+        <!--End breadcrumb-->
+
+        <!-- Start Form -->
+        <main>
+            <section class="spaceContent">
+                <h2>Contáctenos</h2>
+                <form class="row g-3 needs-validation d-flex flex-column justify-content-center align-items-center" novalidate>
+                    <div class="col-9">
+                        <label for="validationCustom01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <label for="validationCustom02" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="col-12">
+                        <label for="validationCustom03" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                        Por favor, ingrese una dirección válida.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="validationCustom04" class="form-label">Localidad</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Gran Buenos Aires</option>
+                            <option>Caba</option>
+                            <option>Interior del pais</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Por favor, selecciones una provincia.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="validationCustom05" class="form-label">Código Postal</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                        Por favor ingrese código válido.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="validationCustom04" class="form-label">Motivo de contacto</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Contacto con asesora</option>
+                            <option>Problemas en la compra</option>
+                            <option>No llego mi compra</option>
+                            <option>Quiero hacer un cambio</option>
+                            <option>Otro</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Por favor, seleccione una opción.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="col-9">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                            Acepto los terminos y condiciones
+                            </label>
+                            <div class="invalid-feedback">
+                            Debes aceptar los terminos y condiciones.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <a class="btn btn-pink" href="../views/page404.html" role="button">Enviar</a>
+                        <input class="btn btn-pink" type="reset" value="Borrar">
+                    </div>
+                </form>
+            </section>    
+            <section>
+                <h2>Visitanos en Av. Santa Fe 2200, CABA</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.3767038004244!2d-58.399884221286285!3d-34.595648239108456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca96e60a94d9%3A0x4f2cb0b47aa2567d!2sAv.%20Santa%20Fe%202200%2C%20C1113%20CABA!5e0!3m2!1ses-419!2sar!4v1653781298366!5m2!1ses-419!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>    
+        <!-- End form -->
+        <div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://lh3.googleusercontent.com/pw/AM-JKLWV8IukkXYc7xqEXT_USr7lZ3Siu0BZVU_eJH7j_un0fp00msHAx3M907mFvXywYe6W7iN6eVlEolgQCsgP1HzzeTcjo447Mwvwm6KJD0riRDRb77Kxxhenmu1lFAKZ-TwGa2HBioUu1YB7__w1j3xy=s50-no" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+            <noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+        </div>
+
+        <!-- Start footer -->
+        <footer class="d-flex justify-content-around">
+            <div>
+                <ul>
+                    <li><a href="#">Formulario de Contacto</a></li>
+                    <li><a href="#">Medios de Pagos Disponible</a></li>
+                    <li><a href="#">Cambios y devoluciones</a></li>
+                    <li><a href="#">Contacto con asesoras</a></li>
+                    <li><a href="./Nosotros.html">Sobre Boutique</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Encuéntranos en Av. Santa Fe 2200, CABA</h3>
+                <h3>Seguinos en nuestras redes sociales</h3>
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../img/Facebook-icon.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="../img/Twitter-icon.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../img/Instagram-icon.png" alt="Instagram">
+                    </a>
+                </div>    
+            </div>
+        </footer>
+        <!-- End footer -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>
