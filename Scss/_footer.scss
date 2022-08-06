@@ -1,0 +1,22 @@
+/*Estilos para footer*/
+footer{
+    background: linear-gradient(to top, map-get($map: $paleta, $key: 'one'), map-get($map: $paleta, $key: 'two'));
+    margin-top: 20px;
+        div h3{
+            color: map-get($map: $paleta, $key: 'white');
+            margin-top: 20px;
+            div a img{
+                margin-right:15px;
+                margin-top:10px;
+                width: 30px;
+            }
+        }
+        div ul{
+            margin-top: 15px; 
+            li a{
+                list-style:none;
+                text-decoration: none;
+                color: map-get($map: $paleta, $key: 'black');
+            }
+        }
+}

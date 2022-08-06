@@ -1,0 +1,69 @@
+body{
+    background-image: url(../img/leaves.webp);
+    background-attachment: scroll;
+}
+
+//maps
+$paleta: (
+'one': #ffc0cb,
+'two': #f870bf,
+'three': rgb(0, 4, 255),
+'white': #f0f0f0,
+'black': #0f0f0f,
+);
+
+//Defino mixins
+@mixin text($family, $weight, $left){
+    font-family: $family;
+    font-weight: $weight;
+    margin-left: $left;
+}
+@mixin size($size){
+    @if $size == $textSm{font-size: $textSm;}
+    @if $size == $textMd{font-size: $textMd;}
+    @if $size == $textLg{font-size: $textLg;}
+    @if $size == $textXl{font-size: $textXl;}
+}
+
+//Defino estilos de textos
+h2,
+h3,
+h5 {
+    @include text($fontMain, $bold, 10px);
+    color: map-get($map: $paleta, $key: 'three');
+}
+p{
+    @include text($secondaryFont, $regular, 10px);
+    @include size($textSm);
+}
+h2{
+    @include size($textXl);
+}
+h3{
+    @include size($textLg);
+}
+h5{
+    @include size($textMd);
+}
+
+/* Selectores avanzados */
+main p.one:first-of-type{
+    font-family: $fontMain;
+    font-weight: $bold;
+    font-size: $textMd;
+}
+main p.one:first-letter{
+    font-size: 2rem;
+}
+
+/*Estilos para pagina de Error*/
+.pageError{
+    width: $primaryWidth;
+    height: 94vh;
+}
+.contenedor{
+    margin: 0;
+}
+.btn-ancho{
+    width: 100%;
+}
